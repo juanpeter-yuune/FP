@@ -41,14 +41,14 @@ header .wrapper h3{
     margin-top: 40px;
 }
 @media screen and (max-width:900px){
-    header .wrapper h1{
-        font-size: 1.5 rem;
+    body header .wrapper h1{
+        font-size: 1.5rem;
     }
-    header .wrapper h3{
+    body header .wrapper h3{
         font-size: 1rem;
     }
-    header .link ul li a{
-        font-size: 0.5rem;
+    body header .link ul li a{
+        font-size: 0.8rem;
     }
 }
 
@@ -59,14 +59,11 @@ header .wrapper img{
     transition: transform .5s ease-out;
     cursor: pointer;
 }
-@media screen and (max-width : 400px){
-    img{
-        display: block;
-    }
-}
+
 header .wrapper img:hover {
     transform: scale(1.1);
 }
+
 header .link ul{
     list-style: none;
     padding: 0;
@@ -74,9 +71,7 @@ header .link ul{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    margin-top: 10px;
-    
-   
+    margin-top: 10px;  
 }
 header .link ul li a{
     margin-right: 15px;
@@ -127,6 +122,14 @@ header .link ul li a:hover{
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 900px){
+    body .tentang-saya .wrapper h2{
+        font-size: 1.5rem;
+    }
+    body .tentang-saya .wrapper p{
+        font-size: 1rem;
+    }
+}
 .tentang-saya .wrapper a{
     color: rgb(248, 247, 247);
     background-color: rgb(163, 76, 5);
@@ -138,6 +141,7 @@ header .link ul li a:hover{
     border-top: none;
     border-left: none;
     border-right: none;
+    font-size: 1rem;
 }
 .education{
     background-color: rgb(241, 137, 52);
@@ -168,7 +172,14 @@ header .link ul li a:hover{
     margin-left: 15px;
     
 }
-
+@media screen and (max-width: 900px){
+    body .education .wrapper h2{
+        font-size: 1.5rem;
+    }
+    body .education .wrapper ol{
+        font-size: 1rem;
+    }
+}
 .education .wrapper a{
     text-decoration: none;
     color: white;
@@ -200,6 +211,7 @@ header .link ul li a:hover{
     text-transform: uppercase;
     border-bottom: 5px solid white;
     display: inline-block;
+    padding-bottom: 5px;
     margin-bottom: 0px;
 }
 
@@ -210,7 +222,15 @@ header .link ul li a:hover{
     padding: 15px;
     margin-bottom: 50px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 0px;
+}
+@media screen and (max-width: 900px){
+    body .employement .wrapper h2{
+        font-size: 1.5rem;
+    }
+    body .employement .wrapper table tr td{
+        font-size: 1rem;
+    }
 }
 
 .publications{
@@ -232,6 +252,11 @@ header .link ul li a:hover{
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 900px){
+    body .publications .wrapper h2{
+        font-size: 1.5rem;
+    }
+}
 .publications .wrapper h3{
     text-shadow: 0 3px 3px black;
     font-size: 20px;
@@ -247,6 +272,11 @@ header .link ul li a:hover{
     transition: transform .5s ease-out;
     cursor: pointer;
 }
+@media screen and (max-width: 900px){
+    body .publications .wrapper img{
+       width: 5%;
+    }
+}
 .publications .wrapper img:hover{
     transform: scale(1.1);
 }
@@ -261,32 +291,33 @@ header .link ul li a:hover{
     justify-content: center;
 }
 .awards .wrapper{
-    padding: 50px;
+    padding: 20px;
 }
 .awards .wrapper h2{
     text-shadow: 0 3px 3px black;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     border-bottom: 5px solid white;
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-.awards .wrapper ul li{
-    text-shadow: 0 3px 3px black;
-    font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 0 15px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  
+    margin-bottom: 30px;
 }
 .awards .wrapper{
     width: 70%;
 }
 .awards .wrapper-awards{
     text-align: left;
+    font-size: 20px
     
+}
+
+@media screen and (max-width: 900px){
+    body .awards .wrapper h2{
+        font-size: 1.5rem;
+    }
+    body .awards .wrapper-awards{
+        font-size: 1rem;
+    }
 }
 .skill {
     background-color: rgb(241, 137, 52);
@@ -321,6 +352,14 @@ header .link ul li a:hover{
     font-size: 20px;
     margin-bottom: 6px;
     padding-left: 5px;
+}
+@media screen and (max-width: 900px){
+    body .skill .wrapper h2{
+        font-size: 1.5rem;
+    }
+    body .skill .wrapper-skill h5{
+        font-size: 1rem;
+    }
 }
 
 .skill .wrapper-skill .background{
@@ -370,6 +409,23 @@ header .link ul li a:hover{
     background-color: black;
     z-index: 2.;
 }
+@media screen and (max-width: 900px){
+    body .wrapper-skill .background{
+        height: 20px;
+    }
+    body .wrapper-skill .background .indicator-css{
+        height: 20px;
+    }
+    body .wrapper-skill .background .indicator-english{
+        height: 20px;
+    }
+    body .wrapper-skill .background .indicator-html{
+        height: 20px;
+    }
+    body .wrapper-skill .backgruond .indicator-java{
+        height: 20px;
+    }
+}
 
 input, textarea{
     outline: none;
@@ -395,6 +451,18 @@ input, textarea{
     padding-bottom: 5px;
     margin-bottom: 50px;
 }
+@media screen and (max-width: 900px){
+    body .contact .wrapper h2{
+        font-size: 1.5rem;
+    }
+    body .contact .wrapper-contact input{
+        width: 50%;
+    }
+    body .contact .wrapper-contact textarea{
+        width: 50%;
+    }
+}
+
 .contact .wrapper-contact input, .contact .wrapper-contact textarea{
    width: 100%;
    height: 30px;
