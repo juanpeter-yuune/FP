@@ -48,7 +48,16 @@ header .wrapper h3{
         font-size: 1rem;
     }
     body header .link ul li a{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        margin-right: 3px;
+        margin-left: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    body header .wrapper img{
+        border-radius: 50px;
     }
 }
 
@@ -205,31 +214,39 @@ header .link ul li a:hover{
     justify-content: center;
 }
 
-.employement .wrapper h2{
+.employement .wrapper caption h2{
     text-shadow: 0 3px 3px black;
     font-size: 2.3rem;
     text-transform: uppercase;
     border-bottom: 5px solid white;
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-emphasis: center;
+}
+.employement .wrapper table {
+    margin-bottom: 20vw;
 }
 
-.employement .wrapper table tr td{
+.employement .wrapper table tr td p{
     text-shadow: 0 3px 3px black;
     font-size: 20px;
     line-height: 25px;
-    padding: 15px;
-    margin-bottom: 50px;
-    margin-left: 15px;
-    margin-top: 0px;
+    padding-left: 50px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 @media screen and (max-width: 900px){
-    body .employement .wrapper h2{
+    body .employement .wrapper caption h2{
         font-size: 1.5rem;
     }
-    body .employement .wrapper table tr td{
+    body .employement .wrapper table tr td p{
         font-size: 1rem;
+    }
+    body .employement .wrapper table{
+        margin-bottom: 40vw;
     }
 }
 
@@ -306,6 +323,7 @@ header .link ul li a:hover{
     width: 70%;
 }
 .awards .wrapper-awards{
+    text-shadow: 0 3px 3px black;
     text-align: left;
     font-size: 20px
     
