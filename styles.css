@@ -515,3 +515,16 @@ input, textarea{
     box-shadow: 0 5px 15px -5px rgba(0,0,0,.7);
 }
 
+footer{
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+@media screen and (max-width:900px){
+    body footer{
+        font-size: 15px;
+    }
+}
+
